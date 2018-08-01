@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {
+      "fw\\": "vendor/fw/core",
+      "app\\": "app"
+    }
+  },
+  "require": {
+    "kint-php/kint": "^2.2"
+  }
+}
