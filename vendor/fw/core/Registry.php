@@ -9,7 +9,7 @@ class Registry
 {
 	use TSingleton;
 	
-	protected static $properties = array();
+	protected static $properties = [];
 	
 	/**
 	 * Method for getting global property by its name

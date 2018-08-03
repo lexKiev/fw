@@ -14,8 +14,9 @@ class App
 		session_start();
 		
 		self::$app = Registry::instance();// container for global register
-		$this->getProperties();
+		$this->getProperties(); //pulling all properties from config/properties.php to global register
 		new ErrorHandler();
+		Router::dispatch($query); // pass requested URI to router
 	}
 	
 	/**

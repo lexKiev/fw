@@ -16,8 +16,12 @@ $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' 
 $app_path = "{$protocol}{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";
 $app_path = preg_replace('#[^/]+$#','',$app_path);
 $app_path = str_replace("/public/",'',$app_path);
-define('BASE_URL',$app_path);
 
+/**
+ * Application home Page and admin panel paje path
+ *
+ */
+define('BASE_URL',$app_path);
 define('ADMIN', BASE_URL.'/adm'); // Admin/manager panel path
 
 /**
