@@ -8,7 +8,7 @@ define('WWW', ROOT . DS . 'public');
 define('APP', ROOT . DS . 'app');
 define('CORE', ROOT . DS . 'vendor' . DS . 'fw' . DS . 'core');
 define('LIBS', ROOT . DS . 'vendor' . DS . 'fw' . DS . 'core' . DS . 'libs');
-define('CACHE', ROOT . DS . 'tmo' . DS . 'cache');
+define('CACHE', ROOT . DS . 'tmp' . DS . 'cache');
 define('CONF', ROOT . DS . 'config');
 
 //Finding base URL of application

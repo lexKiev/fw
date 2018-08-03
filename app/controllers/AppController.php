@@ -1,6 +1,7 @@
 <?php
 
 namespace app\controllers;
+use app\models\AppModel;
 use fw\base\Controller;
 
 /**
@@ -10,5 +11,10 @@ use fw\base\Controller;
 
 class AppController extends Controller
 {
+	public function __construct($route)
+	{
+		parent::__construct($route);
+		new AppModel();
+	}
 	
 }

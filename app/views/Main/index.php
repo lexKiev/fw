@@ -1,7 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: alex
- * Date: 03.08.2018
- * Time: 17:45
- */
+<h1>Hello lol!</h1>
+<?php foreach ($posts as $post): ?>
+<h3><?=$post->title;?></h3>
+<?php endforeach;?>

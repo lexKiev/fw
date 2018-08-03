@@ -44,6 +44,8 @@ class Router
 	 */
 	public static function dispatch($url)
 	{
+		//removing GET parameters from URI
+		$url = self::revomeQueryString($url);
 		//Check if requested URI match some rule in config\routes.php, first match accepted if no match - throw exception
 		if (self::matchRoute($url)) {
 			$controller = 'app' . DS . 'controllers' . DS . self::$route['prefix'] . self::$route['controller'] . 'Controller'; //getting controller prefix(if exist) and name from requested URI
@@ -52,6 +54,7 @@ class Router
 				$action = self::lowerCamelCase(self::$route['action']).'Action'; //Getting requested action (controller method)
 				if (method_exists($controllerObject,$action)){ //Checking if requesed action available and call it
 					$controllerObject->$action();
+					$controllerObject->getView();
 				} else{
 					throw new \Exception("Метод {$controller}::{$action} не найден", 404); //Throw exception and 404 page if no action(controller method) found
 				}
@@ -107,6 +110,22 @@ class Router
 	public static function lowerCamelCase($name)
 	{
 		return lcfirst(self::upperCamelCase($name));
+	}
+	
+	/**
+	 * Methid for removing GET params from URI and store them to $params[1] for future use
+	 * @param $url
+	 * @return string
+	 */
+	protected static function revomeQueryString($url){
+		if ($url){
+			$params = explode('&',$url,2);
+			if (FALSE === strpos($params[0],'=')){
+				return rtrim($params[0],'/');
+			} else {
+				return '';
+			}
+		}
 	}
 	
 }

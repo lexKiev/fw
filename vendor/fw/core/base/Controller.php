@@ -14,6 +14,7 @@ abstract class Controller
 	public $model;
 	public $view;
 	public $prefix;
+	public $layout;
 	public $data = [];
 	public $meta = [];
 	
@@ -26,22 +27,30 @@ abstract class Controller
 		$this->prefix = $route['prefix'];
 	}
 	
+	public function getView()
+	{
+		$viewObject = new View($this->route, $this->layout, $this->view, $this->meta);
+		$viewObject->render($this->meta,$this->data);
+	}
+	
 	/**Method for setting data for passing it to views
 	 * @param $data
 	 */
-	public function set($data){
+	public function set($data)
+	{
 		$this->data = $data;
 	}
 	
 	/**
 	 * Method for setting meta for passing it to views
 	 * @param string $title
-	 * @param string $descr
+	 * @param string $description
 	 * @param string $keywords
 	 */
-	public function setMeta($title ='', $descr = '', $keywords = ''){
+	public function setMeta($title = '', $description = '', $keywords = '')
+	{
 		$this->meta['title'] = $title;
-		$this->meta['descr'] = $descr;
+		$this->meta['description'] = $description;
 		$this->meta['keywords'] = $keywords;
 	}
 }

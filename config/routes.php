@@ -5,7 +5,7 @@ use fw\Router;
 /**
  * User custom rules (has priority over default)
  */
-//put custom rules before defoult
+//put custom rules before default
 
 
 
