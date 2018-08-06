@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1>Default layout</h1>
+<h1>Hello this is the default layout</h1>
 <?=$content?>
 
 <?php

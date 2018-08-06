@@ -1,15 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: alex
- * Date: 04.08.2018
- * Time: 18:52
- */
 
 namespace app\controllers;
 
 
-class MainController
+class MainController extends AppController
 {
-	
+	public function IndexAction()
+	{
+		$brands = \R::find('brand', 'LIMIT 3');
+		$popularItems = \R::find('product', "hit = '1' AND status = '1' LIMIT 8");
+		$this->setMeta('LX Watches', 'Best Watches for fuckers');
+		$this->set(compact('brands', 'popularItems'));
+	}
 }

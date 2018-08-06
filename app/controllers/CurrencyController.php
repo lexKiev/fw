@@ -1,15 +1,28 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: alex
- * Date: 06.08.2018
- * Time: 15:21
- */
 
 namespace app\controllers;
 
+use fw\App;
 
-class CurrencyController
+/**
+ * Class CurrencyController for changing currency and recalculating prices
+ * @package app\controllers
+ */
+class CurrencyController extends AppController
 {
-	
+	public function changeAction(){
+		
+		$currency = !empty($_GET['curr']) ? $_GET['curr'] : null;
+		
+		if ($currency) {
+			$curr = App::$app->getProperty("currencies");
+			//$curr = $curr['UAH'];
+			//$curr = \R::findOne('currency', 'code = ?', [$currency]);
+			if(!empty($curr)){
+				setcookie('currency', $currency, time() + 3600*24*7, '/');
+			}
+		}
+		header("Location: https://www.google.com.ua/");
+		redirect();
+	}
 }

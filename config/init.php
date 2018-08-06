@@ -28,7 +28,7 @@ define('ADMIN', BASE_URL.'/adm'); // Admin/manager panel path
  * Application config
  */
 define('DEBUG', 1); // 1 - developer mode: show all errors, 0 - production mode: hide all errors, log to file
-define('LAYOUT', 'default'); // default template
+define('LAYOUT', 'LXWatches'); // default template
 
 require_once ROOT.DS.'vendor'.DS.'autoload.php';
 

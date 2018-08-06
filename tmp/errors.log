@@ -1,2 +1,36 @@
 [2018-08-03 22:34:09] Error messageNo connection to database | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Db.php | Line: 16 
 ------------------------------------
+[2018-08-04 16:55:09] Error messageCтраница не найдена | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-04 17:52:09] Error messageКонтроллер app\controllers\MainController не найден | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 62 
+------------------------------------
+[2018-08-04 17:52:10] Error messageКонтроллер app\controllers\MainController не найден | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 62 
+------------------------------------
+[2018-08-04 17:53:18] Error messageLayout LX Watches not found | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\base\View.php | Line: 60 
+------------------------------------
+[2018-08-04 18:12:09] Error messageCall to undefined method fw\base\View::getMeta() | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\app\views\layouts\LXWatches.php | Line: 10 
+------------------------------------
+[2018-08-06 11:49:49] Error messageCтраница не найдена | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-06 11:49:54] Error messageCтраница не найдена | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-06 11:56:29] Error messageSQLSTATE[42S02]: Base table or view not found: 1146 Table 'fw.brand' doesn't exist | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Line: 188 
+------------------------------------
+[2018-08-06 11:56:52] Error messageSQLSTATE[42S02]: Base table or view not found: 1146 Table 'fw.brands' doesn't exist | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Line: 188 
+------------------------------------
+[2018-08-06 12:30:30] Error messageCтраница не найдена | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-06 15:00:38] Error messageView C:\dev\OpenServer\OSPanel\domains\fw.loc\app\views\Currency\change.php not found | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\base\View.php | Line: 52 
+------------------------------------
+[2018-08-06 15:00:55] Error messageView C:\dev\OpenServer\OSPanel\domains\fw.loc\app\views\Currency\change.php not found | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\base\View.php | Line: 52 
+------------------------------------
+[2018-08-06 15:01:03] Error messageView C:\dev\OpenServer\OSPanel\domains\fw.loc\app\views\Currency\change.php not found | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\base\View.php | Line: 52 
+------------------------------------
+[2018-08-06 15:03:27] Error messageView C:\dev\OpenServer\OSPanel\domains\fw.loc\app\views\Currency\change.php not found | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\base\View.php | Line: 52 
+------------------------------------
+[2018-08-06 15:59:00] Error messageCтраница не найдена | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-06 17:36:57] Error messageCтраница не найдена | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-06 18:15:27] Error messageCтраница не найдена | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 65 
+------------------------------------

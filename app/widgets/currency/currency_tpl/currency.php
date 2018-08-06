@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: alex
- * Date: 06.08.2018
- * Time: 14:02
- */
+<!-- Currency widget -->
+<option value="" class="label"><?= $this->currency['code']; ?></option>
+<?php foreach ($this->currencies as $currencyKey => $currencyValue): ?>
+	<?php if ($currencyKey != $this->currency['code']): ?>
+        <option value="<?= $currencyKey ?>"><?= $currencyKey ?></option>
+	<?php endif; ?>
+<?php endforeach; ?>

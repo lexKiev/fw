@@ -3,11 +3,10 @@
 namespace fw;
 
 
-class Cache
+abstract class Cache
 {
-	use TSingleton;
 	
-	public function set($key,$data,$seconds = 3600){
+	public static function set($key,$data,$seconds = 3600){
 		if ($seconds){
 			$content['data'] = $data;
 			$content['end_time'] = time() + $seconds;
@@ -19,7 +18,7 @@ class Cache
 		}
 	}
 	
-	public function get($key){
+	public static function get($key){
 		$file = CACHE . DS . md5($key) . '.txt';
 		if (file_exists($file)){
 			$content = unserialize(file_get_contents($file));
@@ -31,7 +30,7 @@ class Cache
 		return FALSE;
 	}
 	
-	public function delete($key){
+	public static function delete($key){
 		$file = CACHE . DS . md5($key) . '.txt';
 		if (file_exists($file)){
 			unlink($file);
