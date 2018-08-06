@@ -2,14 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: alex
- * Date: 04.08.2018
- * Time: 18:52
+ * Date: 06.08.2018
+ * Time: 15:21
  */
 
 namespace app\controllers;
 
 
-class MainController
+class CurrencyController
 {
 	
 }
