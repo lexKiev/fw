@@ -6,6 +6,8 @@ use fw\Router;
  * User custom rules (has priority over default)
  */
 //put custom rules before default
+Router::add('^product/(?P<alias>[a-z0-9-]+)/?$',['controller' => 'Product', 'action' => 'view']); //default controller and method if request string is empty
+
 
 
 

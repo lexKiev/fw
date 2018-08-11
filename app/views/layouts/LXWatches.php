@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <base href="/fw/">
     <title><?= $meta['title'] ?></title>
     <meta name="description" content="<?= $meta['description'] ?>">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
@@ -55,7 +56,7 @@
 <!--top-header-->
 <!--start-logo-->
 <div class="logo">
-    <a href="index.html"><h1>Luxury Watches</h1></a>
+    <a href="<?=BASE_URL?>"><h1>Luxury Watches</h1></a>
 </div>
 <!--start-logo-->
 <!--bottom-header-->
@@ -156,10 +157,6 @@
 <!--footer-end-->
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/simpleCart.min.js"></script>
-<script type="text/javascript" src="js/memenu.js"></script>
-<script>$(document).ready(function () {
-        $(".memenu").memenu();
-    });</script>
 <script src="js/jquery.easydropdown.js"></script>
 <!--Slider-Starts-Here-->
 <script src="js/responsiveslides.min.js"></script>
