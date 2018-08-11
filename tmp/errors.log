@@ -34,3 +34,27 @@
 ------------------------------------
 [2018-08-06 18:15:27] Error messageCтраница не найдена | File: C:\dev\OpenServer\OSPanel\domains\fw.loc\vendor\fw\core\Router.php | Line: 65 
 ------------------------------------
+[2018-08-10 10:51:37] Error messageToo few arguments to function app\widgets\menu\Menu::getMenuHtml(), 0 passed in C:\dev\xampp7.2.3\htdocs\fw\app\widgets\menu\Menu.php on line 51 and at least 1 expected | File: C:\dev\xampp7.2.3\htdocs\fw\app\widgets\menu\Menu.php | Line: 77 
+------------------------------------
+[2018-08-10 11:31:01] Error messageCтраница не найдена | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-10 12:59:53] Error messageКонтроллер app\controllers\CategoryController не найден | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 62 
+------------------------------------
+[2018-08-10 13:00:13] Error messageCтраница не найдена | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-10 13:00:14] Error messageCтраница не найдена | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-10 13:00:30] Error messageCтраница не найдена | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-10 13:00:30] Error messageCтраница не найдена | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-11 17:24:48] Error messageКонтроллер app\controllers\CategoryController не найден | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 62 
+------------------------------------
+[2018-08-11 19:43:15] Error messageCтраница не найдена | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-11 19:43:15] Error messageCтраница не найдена | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 65 
+------------------------------------
+[2018-08-11 19:46:51] Error messageКонтроллер app\controllers\CategoryController не найден | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 62 
+------------------------------------
+[2018-08-11 19:46:59] Error messageКонтроллер app\controllers\CategoryController не найден | File: C:\dev\xampp7.2.3\htdocs\fw\vendor\fw\core\Router.php | Line: 62 
+------------------------------------

@@ -25,6 +25,8 @@ class AppController extends Controller
 	
 	/**
 	 * Method for caching all categories array
+     * if no chached data exist it will cache and return it
+     * if cache exist it will return it
 	 * @return array|bool|mixed
 	 */
 	public static function cacheCategory()
